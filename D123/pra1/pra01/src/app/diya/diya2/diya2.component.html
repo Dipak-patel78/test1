@@ -1,0 +1,10 @@
+<input placeholder="enter text" [(ngModel)]="searchText">
+<button  [ngClass]="{'buttonOn':searchText,'buttonOff':!searchText}"[disabled]="!searchText">Search</button>
+<p *ngIf="searchText !=''">Search for -:{{searchText}} </p>
+<h1 *ngFor="let item of myHome"> {{item}} </h1>
+
+<div *ngFor="let items of myShopy" >
+<img src="{{items.pic}}"> 
+<div  [ngStyle]="{fontWeight:'bold',color:items.Isrequried ?'red':'green'}">
+ {{items.Isrequried ?'show':'hide'}} </div>
+</div>

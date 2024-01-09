@@ -1,0 +1,15 @@
+<div changeToOrange >
+    <img [src]="information.pimeg " class="swa1">
+    <h2>{{information.name}}  </h2>
+    <h2>{{information.from}}  </h2>
+    <h2>{{information.city}}  </h2>
+    <h2>{{information.country}}  </h2>
+    <h2> {{'$' + getDiscountedPrice().toFixed(2)}} </h2>
+    <h2> {{information.instock > 0 ? 'only ' + information.instock +'  item in stock' :'not in stock'}} </h2>
+    <button [disabled]="!(information.instock > 0)" >Get Moksha</button>
+    <input [(ngModel)]="inname">
+    <h3> Name = {{inname}} </h3>
+    <button (click)="decAmount()">-</button>
+    <span>{{oneStock}} </span>
+    <button (click)="incAmount()">+</button>
+    </div>

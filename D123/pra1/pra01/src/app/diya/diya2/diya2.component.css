@@ -1,0 +1,22 @@
+.buttonOn{
+    font-weight: bolder;
+    margin-left: 5px;
+    color:orange;
+    background-color: white;
+}
+.buttonOff{
+    font-weight: bolder;
+    margin-left: 5px;
+    color:grey;
+    background-color:rgb(208, 168, 168);
+}
+img{
+    display: inline-block;
+
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 17px;
+    height: 300px;
+    width: 400px;
+}

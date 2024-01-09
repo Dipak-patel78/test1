@@ -1,0 +1,16 @@
+<div>
+    <h3> {{coral.name}} </h3>
+    <h3> {{coral.lname}} </h3>
+    <h3> {{coral.city}} </h3>
+    <h3> {{coral.height}} </h3>
+    <h3> {{coral.inStock1}} </h3>
+    <h3> {{'Height in foot ' + myOriginalHeight().toFixed(2)}} </h3>
+    <button >Check again</button>
+    <input [(ngModel)]="pname">
+    <h3>Name = {{pname}} </h3>
+    <button (click)="addNumber()">Add</button>
+    <span>{{stStock}} </span>
+    <button (click)="removeNumber()">Remove</button>
+    <button (click)="changeMe()">CheckThis</button>
+    <div [hidden]="coral.show"><h2>Jay Swaminarayan</h2></div>
+</div>
