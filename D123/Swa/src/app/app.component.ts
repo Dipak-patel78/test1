@@ -6,11 +6,13 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-para :string =[
+title(title: any) {
+  throw new Error('Method not implemented.');
+}
+para  =[
   {fName: "dipak",
   lName : "patel"},
   {fName : "Hardik",
   lName:"Patel"}
 ]
- 
 }
